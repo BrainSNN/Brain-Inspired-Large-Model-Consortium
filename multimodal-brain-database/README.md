@@ -1,5 +1,25 @@
 # multimodal-brain-database
-
+## dir
+```
+01-multimodal-brain-database/
+├── data/                         # 原始 & 处理后数据
+│   ├── raw/                      # 下载脚本 + 链接
+│   │   └── download_datasets.py
+│   └── processed/                # 清洗、对齐后的多模态数据
+│       ├── audio/                
+│       ├── video/                
+│       └── eeg/                  
+├── scripts/                      # 数据预处理 & 特征提取
+│   ├── preprocess_audio.py       
+│   ├── preprocess_video.py       
+│   └── preprocess_eeg.py         
+├── notebooks/                    # 可复现的 EDA & 演示笔记本
+│   └── exploratory_analysis.ipynb
+├── docs/                         # 数据集说明 & 使用手册
+│   └── README.md                 
+└── tests/                        # 单元测试：校验数据完整性
+    └── test_data_integrity.py
+```
 ## dataset
 
 
